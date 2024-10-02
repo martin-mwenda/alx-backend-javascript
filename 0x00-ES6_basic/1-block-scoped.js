@@ -3,9 +3,8 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    // eslint-disable-line no-unused-vars
-		const task = true;
-    
+    // Block-scoped const, different from outer task
+		const task = true; 
 		const task2 = false;
   }
 
