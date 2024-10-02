@@ -3,9 +3,9 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    // eslint-disable-next-line
+    //  Block-scoped const, different from outer task
 		const task = true;
-    // eslint-disable-next-line
+    
 		const task2 = false;
   }
 
