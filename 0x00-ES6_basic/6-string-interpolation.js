@@ -3,7 +3,7 @@ export default function getSanFranciscoDescription() {
   const budget = {
     income: '$119,868', // Income for the year 2017
     gdp: '$154.2 billion', // GDP for San Francisco
-    capita: '$178,479',  // GDP per capita for San Francisco
+    capita: '$178,479',
   };
 
   return `As of ${year}, it was the seventh-highest income county in the United States\
