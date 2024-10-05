@@ -1,10 +1,7 @@
-export default function iterateThroughObject(reportWithIterator){{
-  // Initialize an empty array to store employee names
+export default function iterateThroughObject(reportWithIterator) {
   const employees = [];
-
-  for (const employee of reportWithIterator) {
-    employees.push(employee);
+  for (const item of reportWithIterator) {
+    employees.push(item);
   }
-
   return employees.join(' | ');
 }
