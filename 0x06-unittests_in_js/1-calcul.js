@@ -1,19 +1,14 @@
-#!/usr/bin/node
-
-const calculateNumbers = (type, a, b) => {
-  a = Math.round(a);
-  b = Math.round(b);
-  let result = 0;
-
-  if (type === 'SUM') result = a + b;
-  if (type === 'SUBTRACT') result = a - b;
-  if (type === 'DIVIDE') {
-    if (b === 0) {
-      return 'Error';
-    }
-    result = a / b;
+const calculateNumber = (type, a, b) => {
+  if (type === 'SUM') {
+    return Math.round(a) + Math.round(b);
   }
-  return result;
+  if (type === 'SUBTRACT') {
+    return Math.round(a) - Math.round(b);
+  }
+  if (type === 'DIVIDE') {
+    return Math.round(b) === 0 ? 'Error' : Math.round(a) / Math.round(b);
+  }
+  return 0;
 };
 
-module.exports = calculateNumbers;
+module.exports = calculateNumber;
